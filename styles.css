@@ -1,20 +1,148 @@
-.blue {
-    color: rgb(122, 26, 35);
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Martel");
+
+@font-face {
+    font-family: "Smythe";
+    src: url("Smythe/smythe-v10-latin-regular.woff") format("woff"),
+        url("Smythe/smythe-v10-latin-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-h1 {
-    color: green;
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
 }
 
-body {
-    color: rgb(0, 0, 0);
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-.box {
-    height: 100px;
-    width: 100px;
-    padding: 20 px;
-    margin: 50px;
-    border: 10px solid black;
-    background-color: red;
+.nav ul {
+    margin:0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav A:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li {
+    padding:0 5%;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("Images/color\ clouds.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Smythe";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 7em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Martel";
+    font-weight: normal;
+    color:  #333;
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-band-image {
+    float:left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: black;
+    color: white;
+    padding: .25em 0;
+
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding:0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
 }
