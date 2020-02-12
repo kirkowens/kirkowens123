@@ -132,9 +132,10 @@ html, body {
 }
 
 .btn-header {
-    margin: .5em 15% 2em 15%;
+    display: block;
+    margin: 1em auto;
     color: white;
-    border: 2px solid #2D9CDB;
+    border: 2px solid rgba(158, 113, 201, 0.8);
     background-color: rgba(255, 255, 255, .1);
     border-radius: 0;
     font-size: 1.5em;
@@ -145,4 +146,112 @@ html, body {
 
 .btn-header:hover {
     background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: rgb(158, 113, 201, 0.8);
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.shoes-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.shoes-row:last-child {
+    border-bottom: none;
+}
+
+.shoes-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.shoes-brand {
+    color: #555;
+    font-weight: bold;
+    width: 20%;
+}
+
+.shoes-model {
+    width: 50%;
+}
+
+.shoes-size {
+    max-width: 15%;
+}
+
+.shoes-add {
+    max-width: 15%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgba(121, 53, 185, 0.8);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: rgb(121, 36, 201);
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 100px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nike {
+    height: 300px;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column {
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
